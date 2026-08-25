@@ -8,3 +8,10 @@ Os rótulos originais representam cinco condições médicas. A prioridade retor
 API é uma regra de negócio separada e é identificada explicitamente como tal; ela não
 é apresentada como urgência aprendida ou decisão clínica validada.
 
+Versão usada:
+
+- commit upstream: `70a2d9106c724729be8b3c4ddb00d1b14ec300c8`
+- treino: 11.550 registros
+- teste: 2.888 registros
+- idioma: inglês
+- classes: cinco grupos de condições médicas
