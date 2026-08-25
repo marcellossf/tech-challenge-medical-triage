@@ -17,7 +17,16 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-RUN addgroup --system app && adduser --system --ingroup app --home /home/app app
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --yes locales \
+    && sed -i 's/^# *\(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen \
+    && locale-gen \
+    && rm -rf /var/lib/apt/lists/* \
+    && addgroup --system app \
+    && adduser --system --ingroup app --home /home/app app
+
+ENV LANG=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8
 
 COPY --from=builder /install /usr/local
 RUN mkdir -p /app/artifacts /app/data && chown -R app:app /app /home/app
