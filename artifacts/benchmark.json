@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "native_sha256": "4679f3fa6d435474f3685ca201fc1330a54999f4064680659c0881ddb9779d2c",
+    "onnx_sha256": "3cba6bf1c2001ae7db71732e094dbcd8871db5f78305953ef5d816fd592e93e8"
+  },
+  "created_at_utc": "2026-08-25T02:46:52.761291+00:00",
+  "methodology": {
+    "clock": "time.perf_counter_ns",
+    "measured_runs_per_runtime": 300,
+    "warmup_runs_per_runtime": 30,
+    "workload": "single-record end-to-end prediction"
+  },
+  "native": {
+    "mean_ms": 0.407852,
+    "p50_ms": 0.3778,
+    "p95_ms": 0.5781000000000002,
+    "p99_ms": 0.7072809999999999,
+    "runs": 300,
+    "throughput_per_second": 2451.8697959063584
+  },
+  "onnx": {
+    "mean_ms": 0.15575266666666668,
+    "p50_ms": 0.15375,
+    "p95_ms": 0.19914500000000002,
+    "p99_ms": 0.23091299999999998,
+    "runs": 300,
+    "throughput_per_second": 6420.435819183405
+  },
+  "p50_speedup": 2.457235772357724,
+  "p95_speedup": 2.9029099399934726,
+  "p99_speedup": 3.062976099223517
+}

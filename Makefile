@@ -14,11 +14,10 @@ train:
 	uv run python training/train.py
 
 export:
-	uv run python training/export_onnx.py
+	uv run python training/export_onnx.py --samples 2888
 
 benchmark:
 	uv run python training/benchmark.py
 
 api:
 	uv run uvicorn medical_triage.api:app --host 0.0.0.0 --port 8000 --reload
-

@@ -1,0 +1,25 @@
+{
+  "classes": [
+    "cardiovascular diseases",
+    "digestive system diseases",
+    "general pathological conditions",
+    "neoplasms",
+    "nervous system diseases"
+  ],
+  "created_at_utc": "2026-08-25T02:46:50.832949+00:00",
+  "model_version": "0.1.0",
+  "onnx_sha256": "3cba6bf1c2001ae7db71732e094dbcd8871db5f78305953ef5d816fd592e93e8",
+  "onnx_size_bytes": 1566679,
+  "parity": {
+    "max_probability_difference": 1.962073342687276e-07,
+    "passed": true,
+    "prediction_agreement": 1.0,
+    "probability_tolerance": 0.0001,
+    "samples": 2888
+  },
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "source_model_sha256": "4679f3fa6d435474f3685ca201fc1330a54999f4064680659c0881ddb9779d2c",
+  "target_opset": 17
+}
