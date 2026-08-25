@@ -18,4 +18,3 @@ airflow/plugins
 airflow/config
 docs
 tests
-

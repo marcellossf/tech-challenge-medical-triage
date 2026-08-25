@@ -7,4 +7,3 @@ COPY training /opt/airflow/project/training
 RUN pip install --no-cache-dir /opt/airflow/project
 
 WORKDIR /opt/airflow/project
-

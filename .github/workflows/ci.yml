@@ -55,4 +55,3 @@ jobs:
           tags: medical-triage-api:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-

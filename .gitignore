@@ -16,4 +16,3 @@ airflow/plugins/
 airflow/config/
 .DS_Store
 Thumbs.db
-
