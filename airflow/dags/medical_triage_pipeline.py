@@ -41,7 +41,7 @@ with DAG(
 
     export_onnx = BashOperator(
         task_id="export_model_to_onnx",
-        bash_command="python training/export_onnx.py",
+        bash_command="python training/export_onnx.py --samples 2888",
         cwd=PROJECT_DIR,
     )
 

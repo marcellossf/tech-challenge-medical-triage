@@ -1,9 +1,9 @@
 {
   "artifacts": {
-    "native_sha256": "4679f3fa6d435474f3685ca201fc1330a54999f4064680659c0881ddb9779d2c",
-    "onnx_sha256": "3cba6bf1c2001ae7db71732e094dbcd8871db5f78305953ef5d816fd592e93e8"
+    "native_sha256": "5eedf95c4d9c35e2564a042b9ef62d92e0cdb1f924fd3e3df7fd7703dd2fe0a8",
+    "onnx_sha256": "e4436f236e17d977a194add440ecb01fb6bf82f7e126b72e269b1ad7aa4bc047"
   },
-  "created_at_utc": "2026-08-25T02:46:52.761291+00:00",
+  "created_at_utc": "2026-08-25T03:33:28.568760+00:00",
   "methodology": {
     "clock": "time.perf_counter_ns",
     "measured_runs_per_runtime": 300,
@@ -11,22 +11,22 @@
     "workload": "single-record end-to-end prediction"
   },
   "native": {
-    "mean_ms": 0.407852,
-    "p50_ms": 0.3778,
-    "p95_ms": 0.5781000000000002,
-    "p99_ms": 0.7072809999999999,
+    "mean_ms": 0.5175905733333334,
+    "p50_ms": 0.484108,
+    "p95_ms": 0.7139403000000002,
+    "p99_ms": 1.04954449,
     "runs": 300,
-    "throughput_per_second": 2451.8697959063584
+    "throughput_per_second": 1932.0290042376607
   },
   "onnx": {
-    "mean_ms": 0.15575266666666668,
-    "p50_ms": 0.15375,
-    "p95_ms": 0.19914500000000002,
-    "p99_ms": 0.23091299999999998,
+    "mean_ms": 0.14636716666666666,
+    "p50_ms": 0.135197,
+    "p95_ms": 0.21740405000000002,
+    "p99_ms": 0.29073213999999975,
     "runs": 300,
-    "throughput_per_second": 6420.435819183405
+    "throughput_per_second": 6832.133345023873
   },
-  "p50_speedup": 2.457235772357724,
-  "p95_speedup": 2.9029099399934726,
-  "p99_speedup": 3.062976099223517
+  "p50_speedup": 3.580759928104913,
+  "p95_speedup": 3.2839328430174146,
+  "p99_speedup": 3.610005037626734
 }

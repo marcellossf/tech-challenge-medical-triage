@@ -18,9 +18,9 @@ com ONNX Runtime, API FastAPI, Airflow, GitHub Actions, Prometheus e Grafana.
 | F1 macro | 0,5951 |
 | Paridade ONNX | 100% em 2.888 textos |
 | Diferença máxima de probabilidade | 1,96e-7 |
-| Latência p50 | 0,3778 ms -> 0,1538 ms (2,46x) |
-| Latência p95 | 0,5781 ms -> 0,1991 ms (2,90x) |
-| Latência p99 | 0,7073 ms -> 0,2309 ms (3,06x) |
+| Latência p50 | 0,4841 ms -> 0,1352 ms (3,58x) |
+| Latência p95 | 0,7139 ms -> 0,2174 ms (3,28x) |
+| Latência p99 | 1,0495 ms -> 0,2907 ms (3,61x) |
 
 O benchmark usa 30 execuções de warm-up e 300 medições single-record para cada
 runtime no mesmo processo. Números de latência dependem do hardware e devem ser

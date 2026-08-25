@@ -247,6 +247,10 @@ dev = [
     { name = "ruff" },
     { name = "skl2onnx" },
 ]
+pipeline = [
+    { name = "onnx" },
+    { name = "skl2onnx" },
+]
 
 [package.metadata]
 requires-dist = [
@@ -255,6 +259,7 @@ requires-dist = [
     { name = "joblib", specifier = ">=1.4,<2.0" },
     { name = "numpy", specifier = ">=1.26,<3.0" },
     { name = "onnx", marker = "extra == 'dev'", specifier = ">=1.17,<2.0" },
+    { name = "onnx", marker = "extra == 'pipeline'", specifier = ">=1.17,<2.0" },
     { name = "onnxruntime", specifier = ">=1.20,<2.0" },
     { name = "pandas", specifier = ">=2.1.2,<2.2" },
     { name = "prometheus-client", specifier = ">=0.21,<1.0" },
@@ -265,9 +270,10 @@ requires-dist = [
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.9,<1.0" },
     { name = "scikit-learn", specifier = ">=1.5,<2.0" },
     { name = "skl2onnx", marker = "extra == 'dev'", specifier = ">=1.18,<2.0" },
+    { name = "skl2onnx", marker = "extra == 'pipeline'", specifier = ">=1.18,<2.0" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.32,<1.0" },
 ]
-provides-extras = ["dev"]
+provides-extras = ["pipeline", "dev"]
 
 [[package]]
 name = "ml-dtypes"

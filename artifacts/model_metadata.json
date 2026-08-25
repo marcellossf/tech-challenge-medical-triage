@@ -6,7 +6,7 @@
     "neoplasms",
     "nervous system diseases"
   ],
-  "created_at_utc": "2026-08-25T02:45:49.918319+00:00",
+  "created_at_utc": "2026-08-25T03:33:18.220449+00:00",
   "dataset_commit": "70a2d9106c724729be8b3c4ddb00d1b14ec300c8",
   "dataset_processed_checksums": {
     "test.csv": "043e42f95e5afc48d82c7173460b2e923bb24be9f08b19a862a1d08510ca079b",
@@ -62,7 +62,7 @@
     "f1_macro": 0.5950686878556959,
     "test_samples": 2888
   },
-  "model_sha256": "4679f3fa6d435474f3685ca201fc1330a54999f4064680659c0881ddb9779d2c",
+  "model_sha256": "5eedf95c4d9c35e2564a042b9ef62d92e0cdb1f924fd3e3df7fd7703dd2fe0a8",
   "model_type": "tfidf_logistic_regression",
   "model_version": "0.1.0",
   "parameters": {
@@ -109,7 +109,7 @@
   },
   "random_state": 42,
   "runtime": {
-    "python": "3.12.13",
+    "python": "3.11.11",
     "scikit_learn": "1.9.0"
   },
   "train_samples": 11550
