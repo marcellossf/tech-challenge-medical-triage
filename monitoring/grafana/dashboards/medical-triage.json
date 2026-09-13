@@ -160,7 +160,7 @@
           "refId": "A"
         }
       ],
-      "title": "Predições por classe",
+      "title": "Predições por prioridade",
       "type": "timeseries"
     },
     {
@@ -222,7 +222,7 @@
       "targets": [
         {
           "editorMode": "code",
-          "expr": "sum(rate(triage_http_requests_total{status=~\"5..\"}[5m])) / clamp_min(sum(rate(triage_http_requests_total[5m])), 1e-9)",
+          "expr": "(sum(rate(triage_http_requests_total{status=~\"5..\"}[5m])) or vector(0)) / clamp_min(sum(rate(triage_http_requests_total[5m])), 1e-9)",
           "legendFormat": "erros 5xx",
           "range": true,
           "refId": "A"

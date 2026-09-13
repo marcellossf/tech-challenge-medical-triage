@@ -30,18 +30,18 @@ reexecutados no ambiente da apresentação.
 
 ```mermaid
 flowchart LR
-    U[Cliente] --> API[FastAPI]
-    API --> SK[Scikit-Learn]
-    API --> ON[ONNX Runtime]
-    API --> PM[/metrics]
-    PM --> P[Prometheus]
-    P --> G[Grafana]
+    U["Cliente"] --> API["FastAPI"]
+    API --> SK["Scikit-Learn"]
+    API --> ON["ONNX Runtime"]
+    API --> PM["/metrics"]
+    PM --> P["Prometheus"]
+    P --> G["Grafana"]
 
-    D[Medical Abstracts] --> A[Airflow]
-    A --> T[Treino]
-    T --> E[Exportação ONNX]
-    E --> B[Benchmark]
-    B --> AR[Artefatos]
+    D["Medical Abstracts"] --> A["Airflow"]
+    A --> T["Treino"]
+    T --> E["Exportação ONNX"]
+    E --> B["Benchmark"]
+    B --> AR["Artefatos"]
 ```
 
 - Inferência real-time pela API.
@@ -209,15 +209,15 @@ urgência. Essa separação evita apresentar uma transformação arbitrária com
 
 Mais detalhes estão no [Model Card](MODEL_CARD.md).
 
-## Validação realizada e limitação do ambiente
+## Validação realizada
 
 Foram executados localmente: download/checksum, treino, testes Python, Ruff, exportação
 ONNX, paridade, smoke dos dois backends, validação YAML/JSON e benchmark.
 
-Docker não estava instalado na máquina usada para esta execução. Por isso, o build da
-imagem e a subida real de Compose/Airflow precisam ser executados em uma máquina com
-Docker antes da gravação. Os manifests foram validados estaticamente, mas isso não
-substitui o teste real.
+O Docker Desktop foi instalado e a validação real também cobriu a imagem da API, o
+Compose com API, Prometheus e Grafana e a DAG completa no Airflow. O run final executou
+preparo, treino, exportação ONNX com 2.888 amostras e benchmark. O CI do commit final
+passou em lint, testes, cobertura e build Docker.
 
 ## Licenças
 
